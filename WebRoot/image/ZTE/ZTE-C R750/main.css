@@ -1,0 +1,38 @@
+/*
+#deviceTd {text-align:center;}
+#deviceDiv {text-align:-moz-center;}
+*/
+#skin {
+	background:url('skin.jpg'); position:relative; width:426px; height:794px;
+}
+#screen {
+	position:absolute; top:104px; left:53px; width:320px; height:480px;
+}
+#search {}
+#home {
+	background:url('home.jpg'); position:absolute; top:603px; left:57px; width:41px; height:30px;
+}
+#menu {
+	background:url('menu.jpg'); position:absolute; top:603px; left:192px; width:41px; height:30px;
+}
+#back {
+	background:url('back.jpg'); position:absolute; top:603px; left:329px; width:41px; height:30px;
+}
+#call {}
+#endcall {}
+#trackball {}
+#up {
+	background:url('up.jpg'); position:absolute; top:673px; left:126px; width:20px; height:20px;
+}
+#down {
+	background:url('down.jpg'); position:absolute; top:717px; left:126px; width:20px; height:20px;
+}
+#left {
+	background:url('left.jpg'); position:absolute; top:695px; left:104px; width:20px; height:20px;
+}
+#right {
+	background:url('right.jpg'); position:absolute; top:695px; left:148px; width:20px; height:20px;
+}
+#enter {
+	background:url('enter.jpg'); position:absolute; top:695px; left:126px; width:20px; height:20px;
+}

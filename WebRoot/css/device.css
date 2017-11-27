@@ -1,0 +1,702 @@
+/*************************/ /* SECTION 1 - MAIN BODY */
+	/*************************/
+	
+fieldset {
+	text-align: left; 
+	padding: 0 10px; 
+	line-height: 40px; 
+	font: 12px Geneva, Arial, Helvetica, sans-serif;
+}
+
+legend {
+	color: #9B9B9B; 
+	font: bold 14px Geneva, Arial, Helvetica, sans-serif;
+}
+
+a,input.btn,#screen,.key {
+	cursor: pointer;
+}
+
+#resttime {
+	background: #f3f7fd;
+}
+
+.tips {
+	border: 1px solid #CCC;
+	color: #666666;
+	font-size: 14px;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.red {
+	color: red;
+}
+
+.green {
+	color: green;
+}
+
+.gray {
+	color: gray;
+}
+
+.no,.units {
+	position: absolute;
+	height: 14px;
+	width: 26px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 3px;
+	margin: 3px;
+}
+
+.no {
+	background: #FFFFFF;
+}
+
+.btn {
+	background-color: #F5F5F5;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px 2px 2px 2px;
+	color: #666666;
+	font-size: 11px;
+	font-weight: bold;
+	height: 29px;
+	line-height: 27px;
+	margin: 5px 3px;
+	padding: 0 8px;
+	text-align: center;
+}
+
+.btn:hover {
+	background-color: #F8F8F8;
+	border: 1px solid #C6C6C6;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	color: #333333;
+}
+
+.browse {
+	background: #f3f7fd;
+	border: 1px solid #d3e1f9;
+	margin: 5px 3px;
+	padding: 2px 0;
+}
+
+.inputtext {
+	border: 1px solid #BDC7D8;
+	font-size: 15px;
+	height: 30px;
+	line-height: 18px;
+	padding: 5px 4px;
+	vertical-align: middle;
+}
+
+.submit {
+	background-color: #4FC500;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 2px 2px 2px 2px;
+	color: #FFF;
+	font-size: 13px;
+	font-weight: bold;
+	height: 29px;
+	line-height: 27px;
+	padding: 5px 4px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.submit:hover {
+	background-color: #F8F8F8;
+	border: 1px solid #C6C6C6;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	color: #333333;
+}
+
+/*
+.faceboxHeader {background: #E0E0E0; padding: 1px 0 1px 20px; font-weight: bold; }
+.faceboxHeader {
+	background-image: url("../image/yun_01.jpg");
+    height: 40px;
+}
+*/
+
+
+/* .newslist, .content {min-height: 550px;} */
+.news {
+	padding: 5px 2px;
+}
+
+.key {
+	background: no-repeat transparent;
+}
+
+.key:hover {
+	border: 1px solid #00F;
+}
+
+.itemsBg {
+	border-bottom: 1px solid #CCC;
+	background: none repeat 0 0 #F3F3F3;
+}
+
+/*#installDiv, #upfileDiv, */
+#autotestDiv {
+	padding: 5px;
+	margin-bottom: 5px;
+	text-align: left;
+	border: 1px solid #D8D8D8;
+	display: none;
+}
+
+.closeDiv {
+	text-align: right;
+	font-size: 13px;
+	position: relative;
+}
+
+.newslist-sidebar {
+	border: 1px solid #D8D8D8;
+	clear: both;
+	margin: 10px auto 0;
+	width: 220px;
+}
+
+.w_tit-sidebar {
+	background: url("../image/title-bg.gif") repeat scroll 0 0 transparent;
+	border-bottom: 1px solid #E0E0E0;
+	color: #000000;
+	font-size: 12px;
+	height: 23px;
+	line-height: 22px;
+	padding-left: 10px;
+	padding-top: 3px;
+	font-weight: bold;
+	position: relative;
+}
+
+/**********************/ /* SECTION 2 - HEADER */
+	/**********************/ /*--------------------------------------*/
+	/* Section 2.1 - Global navigation menu */
+	/*--------------------------------------*/
+.nav-global-container {
+	position: absolute;
+	z-index: 3;
+	width: 970px;
+	top: 5px;
+	background-color: transparent;
+}
+
+.nav-global {
+	float: right;
+	width: 950px;
+	margin: 0px 5px 0px 0px;
+	padding: 0px;
+	background-color: transparent;
+}
+
+.nav-global ul {
+	float: right;
+	display: inline;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.nav-global li {
+	display: inline;
+	white-space: nowrap;
+	text-transform: none;
+}
+
+/*
+.nav-global li a {display: inline; margin: 0px; padding: 0px 0px 0px 4px;  color: #000000; font-weight: bold; text-decoration: none; font-size: 150%;}
+*/
+.topnav {
+	border-right: solid 1px #000000;
+}
+
+/*
+.nav-global a:hover {background-color: transparent; color: #000000; text-decoration: underline;}
+*/ /*-----------------------------------*/
+	/* Section 2.2 - Sitename and Banner */
+	/*-----------------------------------*/
+.site-name {
+	clear: both;
+	float: left;
+	position: absolute;
+	z-index: 2;
+	width: 700px;
+	top: 20px;
+	margin: 0px;
+	padding-left: 17px;
+	background-color: transparent;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.site-slogan {
+	float: left;
+	position: absolute;
+	z-index: 1;
+	width: 900px;
+	top: 1.9em;
+	left: 15px;
+	margin: 0px;
+	padding: 0px 0px 0px 3px;
+	background-color: transparent;
+	color: #CCD8E4;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.img-header {
+	clear: both;
+	float: left;
+	width: 970px;
+	height: 100px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*------------------------------------*/
+	/* Section 2.3 - Main navigation menu */
+	/*------------------------------------*/
+.nav-main {
+	clear: both;
+	float: left;
+	width: 970px;
+	/*min-height: 2.0em; height: auto !important; height: 2.0em;*/
+	height: 3.0em;
+	line-height: 3.0em;
+	margin: 0px;
+	padding: 0px;
+	border-top: solid 1px #7D7D7D;
+	border-bottom: solid 1px #7D7D7D;
+	background-color: #9FB6D5;
+}  /* Use background-color: rgb(176,207,106);	for green */
+.nav-main ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+
+.nav-main li {
+	float: left;
+	white-space: nowrap;
+	background-color: inherit;
+}
+
+/*
+.nav-main li a {margin: 0px; padding: 0px 10px 0px 10px; border-right: solid 1px #FFFFFF; color: #FFFFFF; text-decoration: none; font-size: 150%;}
+.nav-main a:hover, .nav-main a.selected {background-color: inherit; color: #000000; text-decoration: none;}
+*/
+.buffer {
+	float: left;
+	width: 970px;
+	height: 10px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FFFFFF;
+}
+
+/*************************************/
+	/* SECTION 3 - SIDEBANNER FRONT PAGE */
+	/*************************************/
+.sidebanner-frontpage {
+	clear: both;
+	float: left;
+	width: 160px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.img-sidebanner {
+	width: 160px;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+/******************************/ /* SECTION 4 - SUB-NAVIGATION */
+	/******************************/
+	/*******************************************************************/
+	/* SECTION 5 -  CONTAINER FOR CONTENT AND SIDEBAR                  */
+	/*              Reason: To extend navigation border to footer      */
+	/*******************************************************************/
+.container-content-sidebar-front {
+	float: left;
+	width: 959px;
+	min-height: 500px; /*height: auto !important; height: 500px;*/
+	margin: 0px;
+	padding: 0px 0px 20px 1px;
+	background-color: #FFFFFF;
+}
+
+.container-content-sidebar,.container-content2-sidebar {
+	float: left;
+	width: 959px;
+	min-height: 500px; /*height: auto !important; height: 500px;*/
+	margin: 0px;
+	padding: 0px 0px 10px 0px;
+	border-left: solid 1px #C8C8C8;
+	background-color: #FFFFFF;
+}
+
+/********************************/ /* SECTION 6A - CONTENT PAGE #1 */
+	/********************************/
+.content {
+	float: right;
+	width: 698px;
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+	background-color: transparent;
+	color: #4B4B4B;
+}
+	
+	/* Width should be 444px, but IE-duplication bug forces us to reduce with 6px to 428px */
+.contentbox-container {
+	clear: both;
+	float: left;
+	width: 695px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+	
+	/* Width should be 428px, but IE-duplication bug forces us to reduce with 3px to 425px */
+.contentbox-full {
+	width: 695px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.contentbox-noshading {
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+	background-color: transparent;
+}
+
+.contentbox-shading {
+	margin: 0px;
+	padding: 7px 10px 5px 10px;
+	background-color: #DEDCF2;
+}
+
+/* Heading */
+h1 {
+	clear: left;
+	margin: 1.0em 0px 0.5em 0px;
+	font-weight: bold;
+	font-size: 160%;
+}
+
+h2 {
+	clear: left;
+	margin: 1.0em 0px 0.5em 0px;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+h3 {
+	clear: left;
+	margin: 1.0em 0px 0.5em 0px;
+	font-weight: bold;
+	font-size: 140%;
+}
+
+h4 {
+	clear: left;
+	margin: 1.0em 0px 0.5em 0px;
+	font-weight: bold;
+	font-size: 130%;
+}
+
+h5 {
+	clear: left;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 130%;
+}
+
+h6 {
+	clear: left;
+	margin: 0px;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 130%;
+}
+
+/* Paragraph */
+p {
+	margin: 0px 0px 0.5em 0px;
+	padding: 0px;
+	line-height: 1.2em;
+	font-size: 130%;
+}
+
+p.readmore {
+	margin: -0.2em 0px 0.5em 0px;
+	padding: 0px;
+	line-height: 1.2em;
+	font-size: 110%;
+}
+
+p.quote {
+	margin: 0em 30px 0.6em 30px;
+	line-height: 120%;
+	font-size: 120%;
+}
+
+/* Embedded */
+.embed {
+	float: left;
+	width: 120px;
+	margin: 7px 7px 5px 0px;
+	padding: 5px 5px 5px 5px;
+	background-color: rgb(238, 237, 249);
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1.2em;
+	font-size: 140%;
+}
+
+.embed-caption {
+	float: left;
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1.2em;
+	font-size: 70%;
+}
+
+/* Lists */
+.content ul.noindent,.content2 ul.noindent {
+	margin: 0px 0px 7px 15px;
+	padding: 0px;
+	list-style-type: disc;
+	list-style-position: outside;
+	font-size: 120%;
+}
+
+.content ul.indent,.content2 ul.indent {
+	margin: 0px 0px 7px 15px;
+	padding: 0px 0px 0px 15px;
+	list-style-type: disc;
+	font-size: 120%;
+}
+
+.content ol,.content2 ol {
+	margin: 0px 0px 0px 9px;
+	padding: 0px 0px 0px 25px;
+	list-style-type: decimal;
+	list-style-position: outside;
+	font-size: 120%;
+}
+
+/* Link List */
+.content ul.linklist-noindent,.content2 ul.linklist-noindent {
+	margin: -0.3em 0px 0.5em 0px;
+	padding: 0px;
+	list-style-type: none;
+	line-height: 1.2em;
+	font-size: 120%;
+}
+
+.content ul.linklist-indent,.content2 ul.linklist-indent {
+	margin: -0.3em 0px 0.5em 0px;
+	padding: 0px 0px 0px 10px;
+	list-style-type: none;
+	line-height: 1.2em;
+	font-size: 120%;
+}
+
+/*-----------------------*/ /* Section 6C.5 - Tables */
+	/*-----------------------*/
+.table {
+	clear: left;
+	margin: 0.5em 0px 0.2em 30px;
+	border: solid 1px rgb(150, 150, 150);
+	empty-cells: show;
+	border-collapse: collapse;
+	background-color: rgb(233, 232, 244);
+}
+
+.table tr {
+	margin: 0px;
+	padding: 0px;
+}
+
+.table td {
+	padding: 2px 7px 2px 7px;
+	border: solid 1px rgb(150, 150, 150);
+	text-align: left;
+	font-size: 120%;
+}
+
+.table th {
+	margin: 0px;
+	padding: 2px 7px 2px 7px;
+	border: solid 1px rgb(150, 150, 150);
+	empty-cells: show;
+	text-align: left;
+	font-size: 120%;
+}
+
+p.table-caption {
+	margin: 0.5em 0px 1.0em 30px;
+	padding: 0px;
+	clear: both;
+	text-align: left;
+	font-size: 120%;
+}
+
+/*-----------------------*/ /* Section 6C.6 - Images */
+	/*-----------------------*/
+.img-left-noborder {
+	float: left;
+	margin: 2px 7px 3px 0px;
+}
+
+.img-right-noborder {
+	float: right;
+	margin: 2px 0px 3px 7px;
+}
+
+.img-left-border {
+	float: left;
+	margin: 4px 7px 3px 0px;
+	border: solid 1px rgb(150, 150, 150);
+}
+
+.img-right-border {
+	float: right;
+	margin: 2px 0px 3px 7px;
+	border: solid 1px rgb(150, 150, 150);
+}
+
+/***********************/ /* SECTION 7 - SIDEBAR */
+	/***********************/
+.sidebar {
+	float: left;
+	width: 240px;
+	margin: 0px;
+	padding: 0px; /*padding: 1.0em 0px 0px 0px;*/
+	background-color: #FFFFFF;
+	text-align: left;
+	color: rgb(75, 75, 75);
+}
+	
+	/* Actual width should be: 175px, but because of IE-bug we reduce with 6px so that container has some free space) */
+.sidebarbox-noborder {
+	width: 230px;
+	margin: 0px 0px 1.0em 9px;
+	padding: 0px;
+}
+
+.sidebarbox-border {
+	width: 220px;
+	margin: 0px 0px 1.0em 9px;
+	padding: 4px 4px 4px 4px;
+	border: solid 1px #C8C8C8;
+}
+
+.sidebarbox-title-noshading {
+	display: block;
+	margin: 0px 0px 2px 0px;
+	padding: 0px;
+	background-color: transparent;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.sidebarbox-title-shading {
+	display: block;
+	margin: 0px 0px 2px 0px;
+	padding: 2px 5px 3px 5px;
+	background-color: rgb(225, 225, 225);
+	font-weight: bold;
+	font-size: 150%;
+}
+
+.sidebarbox-noborder p {
+	margin: 0px 5px 0.4em 5px;
+	padding: 0px;
+	background-color: transparent;
+	line-height: 1.2em;
+	font-size: 130%;
+}
+
+.sidebarbox-border p {
+	margin: 0px 0px 0.4em 0px;
+	padding: 0px;
+	background-color: transparent;
+	line-height: 1.2em;
+	font-size: 130%;
+}
+
+/**********************/ /* SECTION 8 - FOOTER */
+	/**********************/
+.footer {
+	clear: both;
+	width: 970px;
+	height: 3.0em;
+	margin: 0px;
+	padding: 0.5em 0px 0.5em 0px;
+	border-top: solid 1px #7D7D7D;
+	/*background-color: #9FB6D5; color: #FFFFFF;*/
+}
+
+/********************************/ /* SECTION 10 - GENERIC CLASSES */
+	/********************************/
+	/*------------------------------------------*/
+	/* Section 10.1 - Global default font sizes */
+	/*------------------------------------------*/
+.nav-global-font {
+	font-size: 1.0em;
+}
+
+.nav-main-font {
+	font-size: 1.0em;
+}
+
+.nav-sub-font {
+	font-size: 1.0em;
+}
+
+.content-font {
+	font-size: 1.0em;
+}
+
+.sidebar-font {
+	font-size: 1.0em;
+}
+
+.footer-font {
+	font-size: 1.0em;
+}
+
+/******************************/ /* SECTION 11 - MISCELLANEOUS */
+	/******************************/
+.showcode {
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 13px;
+	color: rgb(255, 0, 0);
+}
+
+.clear {
+	clear: both;
+}
+
+.hide {
+	display: none;
+}
+
+br {
+	clear: none;
+}

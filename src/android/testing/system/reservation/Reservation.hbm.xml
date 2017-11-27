@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="android.testing.system.reservation">
+	<class lazy="false" name="Reservation" table="RESERVATION">
+		<id name="id" type="java.lang.Integer">
+			<column length="8" name="ID" />
+		</id>
+		<property name="user_id" type="java.lang.Integer">
+			<column name="USER_ID" />
+		</property>
+		<property name="device_id" type="java.lang.Integer">
+			<column name="DEVICE_ID" />
+		</property>
+		<property name="startTime" type="java.lang.Long">
+			<column name="STARTTIME" />
+		</property>
+		<property name="endTime" type="java.lang.Long">
+			<column name="ENDTIME" />
+		</property>
+		<property name="state" type="java.lang.Integer">
+			<column name="STATE" />
+		</property>
+	</class>
+</hibernate-mapping>

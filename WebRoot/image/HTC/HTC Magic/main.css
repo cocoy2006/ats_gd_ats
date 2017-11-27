@@ -1,0 +1,44 @@
+/*
+#deviceTd {text-align:center;}
+#deviceDiv {text-align:-moz-center;}
+*/
+#skin {
+	background:url('skin.jpg'); position:relative; width:400px; height:814px;
+}
+#screen {
+	position:absolute; top:113px; left:39px; width:320px; height:480px;
+}
+#search {
+	background:url('search.jpg'); position:absolute; top:624px; left:323px; width:40px; height:40px;
+}
+#home {
+	background:url('home.jpg'); position:absolute; top:624px; left:39px; width:40px; height:40px;
+}
+#menu {
+	background:url('menu.jpg'); position:absolute; top:624px; left:100px; width:40px; height:40px;
+}
+#back {
+	background:url('back.jpg'); position:absolute; top:624px; left:265px; width:40px; height:40px;
+}
+#call {
+	background:url('call.jpg'); position:absolute; top:676px; left:36px; width:60px; height:26px;
+}
+#endcall {
+	background:url('endcall.jpg'); position:absolute; top:676px; left:304px; width:60px; height:26px;
+}
+#trackball {}
+#up {
+	background:url('up.jpg'); position:absolute; top:654px; left:190px; width:20px; height:20px;
+}
+#down {
+	background:url('down.jpg'); position:absolute; top:698px; left:190px; width:20px; height:20px;
+}
+#left {
+	background:url('left.jpg'); position:absolute; top:676px; left:168px; width:20px; height:20px;
+}
+#right {
+	background:url('right.jpg'); position:absolute; top:676px; left:212px; width:20px; height:20px;
+}
+#enter {
+	background:url('enter.jpg'); position:absolute; top:676px; left:190px; width:20px; height:20px;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="android.testing.system.log">
+	<class lazy="false" name="Log" table="LOG">
+		<id name="id" type="java.lang.Integer">
+			<column length="8" name="ID" />
+		</id>
+		<property name="user_id" type="java.lang.Integer">
+			<column name="USER_ID" />
+		</property>
+		<property name="device_id" type="java.lang.Integer">
+			<column name="DEVICE_ID" />
+		</property>
+		<property name="operation" type="java.lang.String">
+			<column name="OPERATION" />
+		</property>
+		<property name="time" type="java.lang.Long">
+			<column name="TIME" />
+		</property>
+	</class>
+</hibernate-mapping>

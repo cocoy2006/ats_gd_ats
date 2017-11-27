@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>ApplyLock</servlet-name>
+		<servlet-class>android.testing.system.servlet.ApplyLock</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Snapshot</servlet-name>
+		<servlet-class>android.testing.system.servlet.Snapshot</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ExecuteCommands</servlet-name>
+		<servlet-class>android.testing.system.servlet.ExecuteCommands</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoadOnStartup</servlet-name>
+		<servlet-class>android.testing.system.servlet.LoadOnStartup</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Export</servlet-name>
+		<servlet-class>android.testing.system.servlet.Export</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Upfiles</servlet-name>
+		<servlet-class>android.testing.system.servlet.Upfiles</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpProgress</servlet-name>
+		<servlet-class>android.testing.system.servlet.UpProgress</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Autotest</servlet-name>
+		<servlet-class>android.testing.system.servlet.Autotest</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Reserve</servlet-name>
+		<servlet-class>android.testing.system.servlet.Reserve</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>NewTestcase</servlet-name>
+		<servlet-class>android.testing.system.servlet.testcases.NewTestcase</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoadTestcases</servlet-name>
+		<servlet-class>android.testing.system.servlet.testcases.LoadTestcases</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>RunTestcase</servlet-name>
+		<servlet-class>android.testing.system.servlet.testcases.RunTestcase</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateLefttime1</servlet-name>
+		<servlet-class>android.testing.system.servlet.UpdateLefttime1</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetAllDevices</servlet-name>
+		<servlet-class>android.testing.system.servlet.device.GetAllDevices</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Restart</servlet-name>
+		<servlet-class>android.testing.system.servlet.Restart</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>Unlock</servlet-name>
+		<servlet-class>android.testing.system.servlet.Unlock</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>UnactiveDevice</servlet-name>
+    <servlet-class>android.testing.system.servlet.device.UnactiveDevice</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>ApplyLock</servlet-name>
+		<url-pattern>/servlet/ApplyLock</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Snapshot</servlet-name>
+		<url-pattern>/servlet/Snapshot</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ExecuteCommands</servlet-name>
+		<url-pattern>/servlet/ExecuteCommands</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoadOnStartup</servlet-name>
+		<url-pattern>/servlet/LoadOnStartup</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Export</servlet-name>
+		<url-pattern>/servlet/Export</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Upfiles</servlet-name>
+		<url-pattern>/servlet/Upfiles</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpProgress</servlet-name>
+		<url-pattern>/servlet/UpProgress</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Autotest</servlet-name>
+		<url-pattern>/servlet/Autotest</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Reserve</servlet-name>
+		<url-pattern>/servlet/Reserve</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NewTestcase</servlet-name>
+		<url-pattern>/servlet/testcases/NewTestcase</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoadTestcases</servlet-name>
+		<url-pattern>/servlet/testcases/LoadTestcases</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RunTestcase</servlet-name>
+		<url-pattern>/servlet/testcases/RunTestcase</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateLefttime1</servlet-name>
+		<url-pattern>/servlet/UpdateLefttime1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetAllDevices</servlet-name>
+		<url-pattern>/servlet/device/GetAllDevices</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Restart</servlet-name>
+		<url-pattern>/servlet/Restart</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>Unlock</servlet-name>
+		<url-pattern>/servlet/Unlock</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UnactiveDevice</servlet-name>
+    <url-pattern>/servlet/device/UnactiveDevice</url-pattern>
+  </servlet-mapping>
+
+	<listener>
+		<listener-class>android.testing.system.servlet.LoadOnStartup</listener-class>
+	</listener>
+
+	<!-- 异常计时器，用于检测客户端的异常情况，比如无操作、浏览器直接关闭、电脑关机等。 -->
+	<context-param>
+		<param-name>exceptionTime</param-name>
+		<param-value>3</param-value>
+	</context-param>
+	<!-- 超时计时器，用于检测用户的合法使用时间，如果时间已到，则断开当前连接。 -->
+	<context-param>
+		<param-name>timeoutTime</param-name>
+		<param-value>15</param-value>
+	</context-param>
+	<context-param>
+		<param-name>runTestcaseResult</param-name>
+		<param-value>D:/temp/runTestcaseResult/</param-value>
+	</context-param>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

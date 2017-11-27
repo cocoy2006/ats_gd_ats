@@ -1,0 +1,35 @@
+<?xml  version="1.0"  encoding="UTF-8"?>
+<!DOCTYPE  hibernate-configuration  PUBLIC
+"-//Hibernate/Hibernate  Configuration  DTD  3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="hibernate.connection.provider_class">
+			org.hibernate.connection.ProxoolConnectionProvider
+		</property>
+		<property name="hibernate.proxool.pool_alias">
+			molab
+		</property>
+		<property name="hibernate.proxool.xml">
+			proxool.xml
+		</property>
+
+		<!-- SQL dialect -->
+		<property name="dialect">
+			org.hibernate.dialect.MySQLDialect
+		</property>
+		<!-- Echo all executed SQL to stdout-->
+		<property name="show_sql">
+			false
+		</property>
+
+		<mapping resource="android/testing/system/project/Project.hbm.xml"/>
+		<mapping resource="android/testing/system/testcase/Testcase.hbm.xml"/>
+		<mapping resource="android/testing/system/user/User.hbm.xml"/>
+		<mapping resource="android/testing/system/reservation/Reservation.hbm.xml"/>
+		<mapping resource="android/testing/system/device/Device.hbm.xml"/>
+		<mapping resource="android/testing/system/log/Log.hbm.xml"/>
+
+	</session-factory>
+</hibernate-configuration> 

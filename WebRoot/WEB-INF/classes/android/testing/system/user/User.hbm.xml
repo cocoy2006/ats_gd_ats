@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="android.testing.system.user">
+ <class lazy="false" name="User" table="USER">
+  <id name="id" type="java.lang.Integer">
+   <column length="8" name="ID"/>
+   <!-- <generator class="increment"/> -->
+  </id>
+  <property generated="never" lazy="false" name="username" type="java.lang.String">
+   <column length="20" name="USERNAME"/>
+  </property>
+  <property generated="never" lazy="false" name="nickname" type="java.lang.String">
+   <column length="20" name="NICKNAME"/>
+  </property>
+  <!--
+		<property name="username" column="USERNAME"></property>
+		-->
+  <property generated="never" lazy="false" name="password" type="java.lang.String">
+   <column length="50" name="PASSWORD"/>
+  </property>
+  <property generated="never" lazy="false" name="email" type="java.lang.String">
+   <column length="50" name="EMAIL"/>
+  </property>
+  <property generated="never" lazy="false" name="phone_no" type="java.lang.String">
+   <column length="20" name="PHONE_NO"/>
+  </property>
+  <property generated="never" lazy="false" name="lefttime" type="java.lang.Integer">
+   <column length="8" name="LEFTTIME"/>
+  </property>
+  <property generated="never" lazy="false" name="state" type="java.lang.Integer">
+   <column length="8" name="STATE"/>
+  </property>
+  <property generated="never" lazy="false" name="role" type="java.lang.Integer">
+   <column length="8" name="ROLE"/>
+  </property>
+ </class>
+</hibernate-mapping>
